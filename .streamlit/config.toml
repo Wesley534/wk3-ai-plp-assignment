@@ -1,0 +1,3 @@
+[general]
+# Forces the Streamlit environment to use a specific, stable Python version
+python_version = 3.11
