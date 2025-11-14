@@ -12,7 +12,7 @@ You can interact with the deployed applications using the links below.
 | :--- | :--- | :--- | :--- |
 | **Task 1** | Scikit-learn | Decision Tree Classifier (Iris) | **[https://wesley534-wk3-ai-plp-assignment-app-streamlit-4v4a1a.streamlit.app/]**|
 | **Task 2** | TensorFlow/Keras | Convolutional Neural Network (MNIST) | **[https://mnistdigitclassifier-plp.streamlit.app/]**|
-| **Task 3** | spaCy | Named Entity Recognition & Sentiment | **[https://amazon-customer-review.streamlit.app/]**|
+| **Task 3** | spaCy | Named Entity Recognition & Sentiment | **[https://amazon-customer-review.streamlit.app/]**This is is failing due to spacy not being installed in streamlit|
 
 ***
 
