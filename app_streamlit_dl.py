@@ -3,9 +3,9 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 from io import BytesIO
+import pandas as pd
 
 # Install Streamlit-drawable-canvas to let the user draw
-# NOTE: You must have 'streamlit-drawable-canvas' in your requirements.txt
 try:
     from streamlit_drawable_canvas import st_canvas
 except ImportError:
