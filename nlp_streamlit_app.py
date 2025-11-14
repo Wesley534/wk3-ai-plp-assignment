@@ -12,24 +12,16 @@ st.markdown("---")
 # Use st.cache_resource to load the spaCy model only once
 @st.cache_resource
 def load_spacy_model():
-    """Load the spaCy model, downloading if necessary."""
+    """Load the pre-installed spaCy model."""
     model_name = "en_core_web_sm"
     try:
-        # Check if model is downloaded (this will fail if not installed)
+        # Load the model, which is now installed as a Python package via requirements.txt
         nlp = spacy.load(model_name)
-    except OSError:
-        # If model is not found, download it.
-        st.warning(f"spaCy model '{model_name}' not found locally. Attempting to download...")
-        os.system(f"python -m spacy download {model_name}")
-        # Re-try loading
-        try:
-            nlp = spacy.load(model_name)
-        except Exception as e:
-            st.error(f"Failed to load spaCy model after attempted download: {e}")
-            return None
-    
-    st.success("spaCy model loaded successfully.")
-    return nlp
+        st.success(f"spaCy model '{model_name}' loaded successfully.")
+        return nlp
+    except Exception as e:
+        st.error(f"Failed to load spaCy model '{model_name}'. Check that it is correctly added to requirements.txt. Error: {e}")
+        return None
 
 nlp = load_spacy_model()
 
