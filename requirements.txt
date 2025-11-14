@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+numpy
+streamlit
+tensorflow
+keras
+matplotlib
+streamlit-drawable-canvas # Required for the drawing feature in the MNIST app
