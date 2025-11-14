@@ -9,5 +9,4 @@ streamlit==1.33.0
 streamlit-drawable-canvas==0.9.3
 
 # spaCy and model (using direct link is correct)
-spacy==3.7.4
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.4/en_core_web_sm-3.7.4.tar.gz
+spacy[en_core_web_sm]==3.7.4
