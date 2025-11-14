@@ -1,12 +1,11 @@
-# Pinned to versions compatible with Python 3.11/3.12 and each other
-pandas==2.2.2
-scikit-learn==1.4.2
-numpy==1.26.4
-tensorflow==2.16.1
-keras==3.1.0
-matplotlib==3.8.4
-streamlit==1.33.0
-streamlit-drawable-canvas==0.9.3
+pandas
+scikit-learn
+numpy
+tensorflow
+keras
+matplotlib
+streamlit
+streamlit-drawable-canvas
 
 # spaCy and model (using direct link is correct)
-spacy[en_core_web_sm]==3.7.4
+# spacy[en_core_web_sm]==3.7.4 comment this as it is causing the build to fail
