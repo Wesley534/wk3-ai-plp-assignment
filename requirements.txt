@@ -6,3 +6,4 @@ tensorflow
 keras
 matplotlib
 streamlit-drawable-canvas # Required for the drawing feature in the MNIST app
+spacy
